@@ -1,0 +1,151 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* Navigation Menu Mobile*/
+main#navigation{
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 400ms ease-in-out ;
+  padding-block: 10px ;
+  box-shadow: 0px 0px 30px #C4306B;
+}
+
+/* Jim's Gym */
+#navigation .logo a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+#navigation .join a{
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 900;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  background-color: #C4306B;
+  padding: 23px 50px 21px 50px;
+}
+
+#navigation nav{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-block: 10px;
+}
+
+#navigation ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+#navigation li{
+  list-style-type: none;
+}
+
+#navigation li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding-inline: 3rem;
+  transition: all 500ms;
+}
+
+#navigation li a:hover{
+  color: #C4306B;
+}
+
+#navigation .toggle-menu{
+  position: absolute;
+  top: 22x;
+  right: 20px ;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+#navigation .toggle-menu .bar-top{
+  height: 3px;
+  width: 15px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#navigation .toggle-menu .bar{
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+#navigation .toggle-menu .bar-bottom{
+  height: 3px;
+  width: 15px;
+  align-self: flex-end;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 1025px) {
+  #navigation .logo a{
+    margin-left: 10px;
+  }
+
+  #navigation .join{
+    display: none;
+  }
+
+  #navigation nav{
+    padding: 10px 3%;
+    flex-direction: column;
+    align-items: flex-start;
+  }  
+  #navigation .toggle-menu{
+    display: flex;
+  }
+
+  #navigation ul{
+    display: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #navigation ul.active{
+    display: flex;
+  }
+  
+  #navigation li{
+    text-align: center;
+  }
+}
+
+
