@@ -19,6 +19,7 @@ Welcome to the official website of [Jim's Gym](https://jrnerio30.github.io/Jim-s
 ## With this project, I've learned:
 * To manage version control using Git.
 * To Enhance my CSS proficiency by having an organized structured coding approach.
+* * UI and as well as UX are the most crucial parts when it comes to adding functionality.
   
 
 
