@@ -12,20 +12,27 @@ html{
 body{
   font-family: 'Poppins', sans-serif;
   background-color: black;
-  overflow-x: hidden;
 }
 
 /* Navigation Menu Mobile*/
-main#navigation{
+header#navigation{
   background: white;
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 400ms ease-in-out ;
+  transition: all 300ms ease-in-out ;
   padding-block: 10px ;
   box-shadow: 0px 0px 30px #C4306B;
 }
 
+/* When Scroll Down, Header Disappear */
+header.hidden{
+  transform: translateY(-100%);
+}
+/* When Scroll Down, Header Disappear */
+header.visible{
+  transform: translateY(0);
+}
 /* Jim's Gym */
 #navigation .logo a{
   text-decoration: none;
@@ -35,7 +42,7 @@ main#navigation{
   margin-left: 20px;
 }
 
-
+/* Join Now Button */
 #navigation .join a{
   text-decoration: none;
   font-family: 'Poppins';
@@ -47,6 +54,7 @@ main#navigation{
   padding: 39px 50px 39px 50px;
 }
 
+/* Navigation Bar */
 #navigation nav{
   display: flex;
   align-items: center;
@@ -54,6 +62,8 @@ main#navigation{
   padding-block:20px;
 }
 
+
+/* Navigations {About, Facilities, Services and Membership} */
 #navigation ul{
   margin: 0;
   padding: 0;
@@ -61,11 +71,12 @@ main#navigation{
   justify-content: center;
 }
 
-
+/* List of the navigations */
 #navigation li{
   list-style-type: none;
 }
 
+/* Hyper link for {About, Facilities, Services and Membership} */
 #navigation li a {
   text-decoration: none;
   color: black;
@@ -75,11 +86,12 @@ main#navigation{
   padding-inline: 3rem;
   transition: all 500ms;
 }
-
+/* Hovering over the navigations list */
 #navigation li a:hover{
   color: #C4306B;
 }
 
+/* Position of The fries menu button for mobile display */
 #navigation .toggle-menu{
   position: absolute;
   top:33px;
@@ -91,20 +103,21 @@ main#navigation{
   height: 21px;
 }
 
+/* Half of the top line positioned in start */
 #navigation .toggle-menu .bar-top{
   height: 3px;
   width: 15px;
   background-color: black;
   border-radius: 10px;
 }
-
+/* Middle Line */
 #navigation .toggle-menu .bar{
   height: 3px;
   width: 100%;
   background-color: black;
   border-radius: 10px;
 }
-
+/* Bottom half line positioned in end */
 #navigation .toggle-menu .bar-bottom{
   height: 3px;
   width: 15px;
@@ -113,20 +126,23 @@ main#navigation{
   border-radius: 10px;
 }
 
+/* Mobile to Tablet responsiveness */
 @media (max-width: 1025px) {
   #navigation .logo a{
     margin-left: 10px;
   }
-
+/* Removed the extra join button from 
+the right corner of the normal screen navigation */
   #navigation .join{
     display: none;
   }
-
+/* Stacking Navigation list */
   #navigation nav{
     padding: 10px 3%;
     flex-direction: column;
     align-items: flex-start;
   }  
+  /* Displays Fries navigation for mobile */
   #navigation .toggle-menu{
     display: flex;
   }
@@ -149,23 +165,13 @@ main#navigation{
   }
 }
 
-header#home-page{
+main#home-page{
   height: 100vh;  
   width: 100%;
+  background: url(../Images/anastase-maragos-9dzWZQWZMdE-unsplash.jpg) center/cover no-repeat ;
+  background-attachment: fixed;
 }
 
-
-  .background-video-1{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
 
 #home-page{
   display: flex;
@@ -196,7 +202,7 @@ header#home-page{
   text-decoration: none;
   font-weight: 600;
   margin-top: 30px;
-  transition: all 300ms;
+  transition: all 200ms ease-in-out;
 }
 #home-page .join-button-2:hover{
   scale: 1.03;
@@ -209,7 +215,7 @@ header#home-page{
 }
 
 #home-page h1 p, .join-button-2{
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 1920px) {
