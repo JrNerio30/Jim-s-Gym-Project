@@ -1,7 +1,8 @@
 # About Jim's Gym
+https://jrnerio30.github.io/Jim-s-Gym-Project/#
 ![Screenshot 2024-01-19 131341](https://github.com/JrNerio30/Jim-s-Gym-Project/assets/91402801/307f62a2-5bf6-42c2-99c4-de55aca58303)
 
-<p align="center">Welcome to the official website of Jim's Gym—an exceptional destination for individuals seeking a premium fitness experience. Tailored for those looking to embark on their fitness journey or elevate their workout routine, our website provides a comprehensive guide to all aspects of Jim's Gym.</p>
+Welcome to the official website of [Jim's Gym](https://jrnerio30.github.io/Jim-s-Gym-Project/#) an exceptional destination for individuals seeking a premium fitness experience. Tailored for those looking to embark on their fitness journey or elevate their workout routine, our website provides a comprehensive guide to all aspects of Jim's Gym.
 
 ## Front-End Developer Project
 ### Built With
@@ -18,6 +19,7 @@
 ## With this project, I've learned:
 * To manage version control using Git.
 * To Enhance my CSS proficiency by having an organized structured coding approach.
+* * UI and as well as UX are the most crucial parts when it comes to adding functionality.
   
 
 
