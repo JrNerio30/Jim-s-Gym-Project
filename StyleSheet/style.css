@@ -34,12 +34,9 @@ header.visible{
   transform: translateY(0);
 }
 /* Jim's Gym */
-#navigation .logo a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  font-size: 30px;
-  margin-left: 20px;
+#navigation img{
+  height: 50px;
+  width: 60px;
 }
 
 /* Join Now Button */
@@ -51,7 +48,13 @@ header.visible{
   font-style: italic;
   color: white;
   background-color: #C4306B;
-  padding: 39px 50px 39px 50px;
+  padding: 45px 50px 44px 50px;
+  transition: all 400ms ease-in-out;
+}
+
+#navigation .join a:hover{
+  padding-block:20px ;
+  border-radius: 90px;
 }
 
 /* Navigation Bar */
@@ -59,7 +62,7 @@ header.visible{
   display: flex;
   align-items: center;
   justify-content:space-between;
-  padding-block:20px;
+  padding: 20px 1%;
 }
 
 
@@ -106,7 +109,7 @@ header.visible{
 /* Half of the top line positioned in start */
 #navigation .toggle-menu .bar-top{
   height: 3px;
-  width: 15px;
+  width: 100%;
   background-color: black;
   border-radius: 10px;
 }
@@ -120,16 +123,16 @@ header.visible{
 /* Bottom half line positioned in end */
 #navigation .toggle-menu .bar-bottom{
   height: 3px;
-  width: 15px;
-  align-self: flex-end;
+  width: 100%;
   background-color: black;
   border-radius: 10px;
 }
 
 /* Mobile to Tablet responsiveness */
 @media (max-width: 1025px) {
-  #navigation .logo a{
-    margin-left: 10px;
+  #navigation img{
+    height: 40px;
+    width: 50px;
   }
 /* Removed the extra join button from 
 the right corner of the normal screen navigation */
@@ -232,8 +235,35 @@ main#home-page{
 
 
 
-section#short-intro{
+section#location{
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #C4306B; 
 }
+
+#location h1{
+  color: white;
+  text-align: center;
+  font-size: clamp(2rem, 11vw, 6rem);
+}
+
+#location p{
+  color: white;
+  margin-bottom: 80px;
+  font-size: clamp(1rem, 6vw, 2rem); 
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#location .map{
+  width: 60vw;
+  height: 60vh;
+  background-color: white;
+  
+}
+
 
 
