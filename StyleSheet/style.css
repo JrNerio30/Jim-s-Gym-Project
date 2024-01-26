@@ -94,7 +94,7 @@ header.visible{
   color: #C4306B;
 }
 
-/* Position of The fries menu button for mobile display */
+/* Position of The hamburger menu button for mobile display */
 #navigation .toggle-menu{
   position: absolute;
   top:33px;
@@ -145,11 +145,11 @@ the right corner of the normal screen navigation */
     flex-direction: column;
     align-items: flex-start;
   }  
-  /* Displays Fries navigation for mobile */
+  /* Displays hamburger navigation for mobile */
   #navigation .toggle-menu{
     display: flex;
   }
-
+  /* Navigations */
   #navigation ul{
     display: none;
     margin-top: 100px;
@@ -158,16 +158,16 @@ the right corner of the normal screen navigation */
     flex-direction: column;
     width: 100%;
   }
-
+  /* Displays the navigation when the hamburger icon is click */
   #navigation ul.active{
     display: flex;
   }
-  
+  /* The {About, Facilities, Services and Membership} is displayed in the center */
   #navigation li{
     text-align: center;
   }
 }
-
+/* The main landing page */
 main#home-page{
   height: 100vh;  
   width: 100%;
@@ -175,14 +175,14 @@ main#home-page{
   background-attachment: fixed;
 }
 
-
+/* home page's display (parent) */
 #home-page{
   display: flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
 }
-
+/* "Welcome to Jim's Gym" */
 #home-page h1{
   color: white;
   font-weight: 600;
@@ -190,13 +190,13 @@ main#home-page{
   margin-bottom: 10px;
   line-height: 120%;
 }
-
+/* "Get Hard, Stay Hard" */
 #home-page p{
   color: white;
   font-weight: 590;
   font-size: clamp(1rem, 6vw, 3rem); 
 }
-
+/* The Join Now button */
 #home-page .join-button-2{
   padding: 20px 50px;
   color: white;
@@ -207,26 +207,19 @@ main#home-page{
   margin-top: 30px;
   transition: all 200ms ease-in-out;
 }
+/* Hover effect for Join Now button */
 #home-page .join-button-2:hover{
   scale: 1.03;
   box-shadow: 0px 0px 30px #C4306B;
 }
-
+/* When click event */
 #home-page .join-button-2:active{
   scale: 0.97;
   box-shadow: 0px 0px 20px #C4306B;
 }
 
-#home-page h1 p, .join-button-2{
-  margin-bottom: 0px;
-}
-
 @media (max-width: 1920px) {
-  header#home-page{
-    height: 100vh;
-    background-attachment:local;
-  }
-
+  /* For The Clamp feature when shrunk */
   #home-page h1{
     margin-inline: 50px;
     text-align: center;
@@ -234,22 +227,22 @@ main#home-page{
 }
 
 
-
+/* The "Our Location" section */
 section#location{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #C4306B; 
+  background-image: linear-gradient(175deg, #000000 52%, #030303 59%, #3e3e3e 100%);
 }
-
+/* "Our Location" */
 #location h1{
   color: white;
   text-align: center;
   font-size: clamp(2rem, 11vw, 6rem);
 }
-
+/* "Find Our Gym Now And View Our Membership" */
 #location p{
   color: white;
   margin-bottom: 80px;
@@ -257,12 +250,12 @@ section#location{
   text-transform: capitalize;
   text-align: center;
 }
-
+/* The map **which still needs to be implemented */
 #location .map{
   width: 60vw;
   height: 60vh;
   background-color: white;
-  
+  border-radius: 100px;
 }
 
 
